@@ -1,0 +1,20 @@
+# Construction Safety AI - Configuration
+
+project:
+  name: "Construction Site Safety Monitoring"
+  version: "2.0"
+  phase: "Phase 1 & 2"
+
+paths:
+  data: "data/datasets"
+  models: "models/trained"
+  outputs: "outputs"
+  src: "src"
+
+training:
+  model: "yolov8n"
+  epochs: 50
+  batch_size: 16
+  imgsz: 640
+  device: "mps"
+  patience: 20
